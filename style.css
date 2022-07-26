@@ -49,14 +49,38 @@ article section .top {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-top: 0;
-}
-
-article section .old-price {
-    text-decoration: line-through;
+    font-size: 12px;
 }
 
 article section .new-price {
     font-family: 'Fraunces', serif;
     font-size: 30px;
     color: hsl(158, 36%, 37%);
+    display: inline;
+}
+
+article section .old-price {
+    text-decoration: line-through;
+    display: inline;
+    padding-left: 20px;
+}
+
+article section button {
+    height: 40px;
+    width: 230px;
+    background-color: hsl(158, 36%, 37%);
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+article section button img {
+    padding: 10px;
+}
+
+article section button p {
+    color: hsl(0, 0%, 100%);
 }
