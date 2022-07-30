@@ -20,10 +20,18 @@ article {
     border-radius: 10px;
 }
 
-article img {
+/*** Images ***/
+
+article .desktop-img {
     height: 100%;
     border-radius: 10px 0 0 10px ;
 }
+
+article .mobile-img {
+    display: none;
+}
+
+/**** Text section ****/
 
 article section {
     padding: 30px;
@@ -34,13 +42,14 @@ article section h1 {
     color: hsl(212, 21%, 14%);
     font-size: 30px;
     padding-right: 10px;
+    margin-bottom: 20px;
     line-height: 32px;
 }
 
 article section p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    margin: 15px 0;
+    margin: 10px 0 10px 0;
     line-height: 22px;
     color: hsl(228, 12%, 48%);
 }
@@ -52,29 +61,33 @@ article section .top {
     font-size: 12px;
 }
 
+article section .prices {
+    display: flex;
+}
+
 article section .new-price {
     font-family: 'Fraunces', serif;
     font-size: 30px;
     color: hsl(158, 36%, 37%);
-    display: inline;
+    margin-bottom: 25px;
 }
 
 article section .old-price {
     text-decoration: line-through;
-    display: inline;
     padding-left: 20px;
 }
 
+/**** Button ****/
+
 article section button {
     height: 40px;
-    width: 230px;
+    width: 100%;
     background-color: hsl(158, 36%, 37%);
     border: 0;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 article section button img {
@@ -83,4 +96,36 @@ article section button img {
 
 article section button p {
     color: hsl(0, 0%, 100%);
+}
+
+article section button:hover {
+    background-color: hsl(158, 38%, 23%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+/**** Mobile version ****/
+
+@media screen and (max-width: 600px) {
+
+    article {
+        flex-direction: column;
+        width: 330px;
+        height: 580px;
+    }
+
+    article .desktop-img {
+        display: none;
+    }
+
+    article .mobile-img {
+        border-radius: 10px 10px 0 0;
+        display: block;
+        width: 100%;
+    }
+
+    article section {
+        padding: 20px;
+    }
+
 }
