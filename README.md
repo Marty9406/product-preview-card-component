@@ -30,7 +30,7 @@ Desktop version:
 
 Mobile version (for devices with display width less than 600px):
 
-![](./images/screenshot-mobile.jpg)
+<img src="./images/screenshot-mobile.jpg" alt="mobile-image" width="50%">
 
 ### Links
 
