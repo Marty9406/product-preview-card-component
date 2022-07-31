@@ -44,6 +44,7 @@ article section h1 {
     padding-right: 10px;
     margin-bottom: 20px;
     line-height: 32px;
+    font-weight: bold;
 }
 
 article section p {
@@ -70,6 +71,7 @@ article section .new-price {
     font-size: 30px;
     color: hsl(158, 36%, 37%);
     margin-bottom: 25px;
+    font-weight: bold;
 }
 
 article section .old-price {
@@ -88,14 +90,12 @@ article section button {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
 }
 
 article section button img {
     padding: 10px;
-}
-
-article section button p {
-    color: hsl(0, 0%, 100%);
 }
 
 article section button:hover {
